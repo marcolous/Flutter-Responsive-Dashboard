@@ -4,24 +4,30 @@ import 'package:responsive_dashboard/models/drawe_item_model.dart';
 import 'package:responsive_dashboard/utils/app_styles.dart';
 
 class DrawerItem extends StatelessWidget {
-  const DrawerItem({super.key, required this.draweItemModel});
-  final DraweItemModel draweItemModel;
-
+  const DrawerItem(
+      {super.key, required this.drawerItemModel, required this.isActive});
+  final DrawerItemModel drawerItemModel;
+  final bool isActive;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 20, left: 20, right: 20),
       child: ListTile(
-        onTap: () {},
-        leading: SvgPicture.asset(draweItemModel.image),
+        leading: SvgPicture.asset(drawerItemModel.image),
         title: FittedBox(
           alignment: Alignment.centerLeft,
           fit: BoxFit.scaleDown,
           child: Text(
-            draweItemModel.title,
-            style: AppStyles.styleRegular16,
+            drawerItemModel.title,
+            style: isActive ? AppStyles.styleBold16 : AppStyles.styleRegular16,
           ),
         ),
+        trailing: isActive
+            ? Container(
+                width: 3.27,
+                decoration: const BoxDecoration(color: Color(0xff4EB7F2)),
+              )
+            : null,
       ),
     );
   }
