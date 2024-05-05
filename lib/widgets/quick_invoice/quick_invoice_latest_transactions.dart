@@ -32,17 +32,19 @@ class QuickInvoiceLatestTransaction extends StatelessWidget {
           style: AppStyles.styleMedium16,
         ),
         const Gap(12),
-        //Solution 1 for horizontal listview (its height based on its child)
+        //Solution 1 for horizontal listview (its height based on its child, lower performance, for few items)
         SingleChildScrollView(
+          padding: EdgeInsets.zero,
           scrollDirection: Axis.horizontal,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
             children: transactions
                 .map((e) =>
                     IntrinsicWidth(child: UserInfoListTile(userInfoModel: e)))
                 .toList(),
           ),
         ),
-        //Solution 2 for horizontal listview (need spacific height)
+        //Solution 2 for horizontal listview (need spacific height, better performance, for many items)
         // SizedBox(
         //   height: 90,
         //   child: ListView.builder(
