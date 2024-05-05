@@ -22,9 +22,9 @@ class QuickInvoice extends StatelessWidget {
             QuickInvoiceHeader(),
             Gap(16),
             QuickInvoiceLatestTransaction(),
-            Padding(
-              padding: EdgeInsets.symmetric(vertical: 12),
-              child: Divider(),
+            Divider(
+              height: 48,
+              color: Color(0xffF1F1F1),
             ),
             CustomerNameEmailRow(),
             Gap(24),

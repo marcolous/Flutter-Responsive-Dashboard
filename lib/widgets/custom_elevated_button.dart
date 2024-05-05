@@ -22,8 +22,8 @@ class CustomElevatedButton extends StatelessWidget {
           foregroundColor: Color(bgColor),
           surfaceTintColor: Color(bgColor),
           elevation: 0,
-          shape: ContinuousRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
           ),
         ),
         child: Text(
