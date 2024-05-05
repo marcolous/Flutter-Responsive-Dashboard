@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:responsive_dashboard/utils/app_styles.dart';
+import 'package:responsive_dashboard/widgets/arrow_down_icon.dart';
 
 class AllExpensesHeader extends StatelessWidget {
   const AllExpensesHeader({super.key});
@@ -23,18 +24,14 @@ class AllExpensesHeader extends StatelessWidget {
               borderRadius: BorderRadius.circular(12),
             ),
           ),
-          child: Row(
+          child: const Row(
             children: [
-              const Text(
+              Text(
                 'Monthly',
                 style: AppStyles.styleMedium16,
               ),
-              const Gap(18),
-              Transform.rotate(
-                angle: -1.5708,
-                child: const Icon(Icons.arrow_back_ios_new_rounded,
-                    color: Color(0xff064061)),
-              )
+              Gap(18),
+              ArrowDownIcon(),
             ],
           ),
         ),
