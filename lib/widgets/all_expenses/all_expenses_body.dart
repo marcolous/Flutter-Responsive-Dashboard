@@ -32,29 +32,26 @@ class _AllExpensesBodyState extends State<AllExpensesBody> {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: Padding(
-        padding: const EdgeInsets.only(left: 14, right: 14, bottom: 20),
-        child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          shrinkWrap: true,
-          physics: const NeverScrollableScrollPhysics(),
-          itemCount: expensesItems.length,
-          itemBuilder: (context, index) {
-            return GestureDetector(
-              onTap: () {
-                if (isActive != index) {
-                  setState(() {
-                    isActive = index;
-                  });
-                }
-              },
-              child: AllExpensesItem(
-                isActive: isActive == index,
-                allExpensesItemModel: expensesItems[index],
-              ),
-            );
-          },
-        ),
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
+        itemCount: expensesItems.length,
+        itemBuilder: (context, index) {
+          return GestureDetector(
+            onTap: () {
+              if (isActive != index) {
+                setState(() {
+                  isActive = index;
+                });
+              }
+            },
+            child: AllExpensesItem(
+              isActive: isActive == index,
+              allExpensesItemModel: expensesItems[index],
+            ),
+          );
+        },
       ),
     );
   }

@@ -19,7 +19,7 @@ class _AllExpensesItemState extends State<AllExpensesItem> {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-      margin: const EdgeInsets.symmetric(horizontal: 6),
+      margin: const EdgeInsets.only(right: 12),
       decoration: ShapeDecoration(
         color: widget.isActive ? const Color(0xff4EB7F2) : Colors.white,
         shape: RoundedRectangleBorder(
