@@ -11,7 +11,7 @@ class CustomContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double defHeight = MediaQuery.sizeOf(context).height;
+    //double defHeight = MediaQuery.sizeOf(context).height;
     return Container(
       height: height, //defHeight * height,
       decoration: ShapeDecoration(

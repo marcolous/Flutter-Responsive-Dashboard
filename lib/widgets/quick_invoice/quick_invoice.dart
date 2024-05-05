@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:responsive_dashboard/widgets/custom_container.dart';
 import 'package:responsive_dashboard/widgets/quick_invoice/quick_invoice_header.dart';
+import 'package:responsive_dashboard/widgets/quick_invoice/quick_invoice_latest_transactions.dart';
 
 class QuickInvoice extends StatelessWidget {
   const QuickInvoice({super.key});
@@ -17,8 +18,7 @@ class QuickInvoice extends StatelessWidget {
           children: [
             QuickInvoiceHeader(),
             Gap(16),
-
-            // AllExpensesBody(),
+            QuickInvoiceLatestTransaction(),
           ],
         ),
       ),
