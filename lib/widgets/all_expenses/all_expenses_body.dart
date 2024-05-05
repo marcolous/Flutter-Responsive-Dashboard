@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/models/all_expenses_item_model.dart';
 import 'package:responsive_dashboard/utils/app_images.dart';
-import 'package:responsive_dashboard/widgets/all_expenses_item.dart';
+import 'package:responsive_dashboard/widgets/all_expenses/all_expenses_item.dart';
 
 class AllExpensesBody extends StatefulWidget {
   const AllExpensesBody({super.key});
@@ -32,26 +32,29 @@ class _AllExpensesBodyState extends State<AllExpensesBody> {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        shrinkWrap: true,
-        physics: const NeverScrollableScrollPhysics(),
-        itemCount: expensesItems.length,
-        itemBuilder: (context, index) {
-          return GestureDetector(
-            onTap: () {
-              if (isActive != index) {
-                setState(() {
-                  isActive = index;
-                });
-              }
-            },
-            child: AllExpensesItem(
-              isActive: isActive == index,
-              allExpensesItemModel: expensesItems[index],
-            ),
-          );
-        },
+      child: Padding(
+        padding: const EdgeInsets.only(left: 14, right: 14, bottom: 20),
+        child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          itemCount: expensesItems.length,
+          itemBuilder: (context, index) {
+            return GestureDetector(
+              onTap: () {
+                if (isActive != index) {
+                  setState(() {
+                    isActive = index;
+                  });
+                }
+              },
+              child: AllExpensesItem(
+                isActive: isActive == index,
+                allExpensesItemModel: expensesItems[index],
+              ),
+            );
+          },
+        ),
       ),
     );
   }

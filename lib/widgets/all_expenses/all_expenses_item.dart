@@ -19,7 +19,7 @@ class _AllExpensesItemState extends State<AllExpensesItem> {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-      margin: const EdgeInsets.only(right: 12),
+      margin: const EdgeInsets.symmetric(horizontal: 6),
       decoration: ShapeDecoration(
         color: widget.isActive ? const Color(0xff4EB7F2) : Colors.white,
         shape: RoundedRectangleBorder(
@@ -39,7 +39,17 @@ class _AllExpensesItemState extends State<AllExpensesItem> {
                 backgroundColor: widget.isActive
                     ? const Color(0xffFFFFFF).withOpacity(.1)
                     : const Color(0xffFAFAFA),
-                child: SvgPicture.asset(widget.allExpensesItemModel.image),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: SvgPicture.asset(
+                    widget.allExpensesItemModel.image,
+                    colorFilter: ColorFilter.mode(
+                        widget.isActive
+                            ? const Color(0xffFFFFFF)
+                            : const Color(0xff4EB7F2),
+                        BlendMode.srcIn),
+                  ),
+                ),
               ),
               const Gap(56),
               Transform.rotate(

@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:responsive_dashboard/models/drawe_item_model.dart';
 import 'package:responsive_dashboard/utils/app_images.dart';
-import 'package:responsive_dashboard/widgets/drawer_item.dart';
-import 'package:responsive_dashboard/widgets/drawer_item_listview.dart';
-import 'package:responsive_dashboard/widgets/user_info_list_tile.dart';
+import 'package:responsive_dashboard/widgets/drawer/drawer_item.dart';
+import 'package:responsive_dashboard/widgets/drawer/drawer_item_listview.dart';
+import 'package:responsive_dashboard/widgets/drawer/user_info_list_tile.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -42,8 +42,7 @@ class CustomDrawer extends StatelessWidget {
             hasScrollBody: false,
             child: Column(
               children: [
-                Expanded(child: SizedBox(height: 10)),
-                //ButtomDrawerListview(draweItem: draweItemBottom),
+                Expanded(child: Gap(10)),
                 DrawerItem(
                     drawerItemModel: DrawerItemModel(
                         title: 'Settings', image: Assets.imagesSettings),
