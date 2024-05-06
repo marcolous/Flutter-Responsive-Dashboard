@@ -8,15 +8,18 @@ class AllExpensesAndQuickInvoice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: MediaQuery.sizeOf(context).height,
-      child: const Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          AllExpenses(),
-          Gap(24),
-          QuickInvoice(),
-        ],
+    return Padding(
+      padding: const EdgeInsets.only(top: 40),
+      child: SizedBox(
+        height: MediaQuery.sizeOf(context).height,
+        child: const Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            AllExpenses(),
+            Gap(24),
+            QuickInvoice(),
+          ],
+        ),
       ),
     );
   }

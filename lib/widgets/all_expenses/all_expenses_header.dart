@@ -15,7 +15,6 @@ class AllExpensesHeader extends StatelessWidget {
           style: AppStyles.styleSemiBold20,
         ),
         Container(
-          margin: const EdgeInsets.only(top: 20),
           padding: const EdgeInsets.all(12),
           decoration: ShapeDecoration(
             color: Colors.white,
