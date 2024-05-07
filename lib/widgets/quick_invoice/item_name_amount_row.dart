@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:responsive_dashboard/widgets/arrow_down_icon.dart';
+import 'package:responsive_dashboard/widgets/custom_widgets/custom_arrow_down_icon.dart';
 import 'package:responsive_dashboard/widgets/quick_invoice/custom_user_info_text_field.dart';
 
 class ItemNameAmountRow extends StatelessWidget {
@@ -18,7 +18,7 @@ class ItemNameAmountRow extends StatelessWidget {
         CustomUserInfoTextField(
             title: 'Item mount',
             hintText: 'USD',
-            suffixIcon: ArrowDownIcon()),
+            suffixIcon: CustomArrowDownIcon()),
       ],
     );
   }

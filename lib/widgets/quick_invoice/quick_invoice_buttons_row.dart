@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:responsive_dashboard/widgets/custom_elevated_button.dart';
+import 'package:responsive_dashboard/widgets/custom_widgets/custom_elevated_button.dart';
 
 class QuickInvoiceButtonsRow extends StatelessWidget {
   const QuickInvoiceButtonsRow({

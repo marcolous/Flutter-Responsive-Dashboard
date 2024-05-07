@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:responsive_dashboard/widgets/all_expenses/all_expenses_body.dart';
 import 'package:responsive_dashboard/widgets/all_expenses/all_expenses_header.dart';
-import 'package:responsive_dashboard/widgets/custom_container.dart';
+import 'package:responsive_dashboard/widgets/custom_widgets/custom_container.dart';
 
 class AllExpenses extends StatelessWidget {
   const AllExpenses({super.key});

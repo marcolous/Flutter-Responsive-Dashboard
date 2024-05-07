@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:responsive_dashboard/widgets/custom_container.dart';
-import 'package:responsive_dashboard/widgets/custom_divider.dart';
+import 'package:responsive_dashboard/widgets/custom_widgets/custom_container.dart';
+import 'package:responsive_dashboard/widgets/custom_widgets/custom_divider.dart';
 import 'package:responsive_dashboard/widgets/my_card/dots_indicator.dart';
 import 'package:responsive_dashboard/widgets/my_card/my_card.dart';
 import 'package:responsive_dashboard/widgets/transactions/transactions.dart';

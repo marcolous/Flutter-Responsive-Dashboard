@@ -3,15 +3,15 @@ import 'package:gap/gap.dart';
 import 'package:responsive_dashboard/utils/app_styles.dart';
 import 'package:responsive_dashboard/widgets/custom_widgets/custom_arrow_down_icon.dart';
 
-class AllExpensesHeader extends StatelessWidget {
-  const AllExpensesHeader({super.key});
+class IncomeHeader extends StatelessWidget {
+  const IncomeHeader({super.key});
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         const Text(
-          'All Expenses',
+          'Income',
           style: AppStyles.styleSemiBold20,
         ),
         Container(

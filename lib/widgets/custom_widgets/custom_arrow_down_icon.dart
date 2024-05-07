@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ArrowDownIcon extends StatelessWidget {
-  const ArrowDownIcon({super.key});
+class CustomArrowDownIcon extends StatelessWidget {
+  const CustomArrowDownIcon({super.key});
 
   @override
   Widget build(BuildContext context) {

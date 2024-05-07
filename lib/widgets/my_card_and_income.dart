@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
+import 'package:responsive_dashboard/widgets/income/income.dart';
 import 'package:responsive_dashboard/widgets/my_card/my_card_and_transaction_history.dart';
 
 class MyCardAndIncome extends StatelessWidget {
@@ -11,6 +13,8 @@ class MyCardAndIncome extends StatelessWidget {
       child: Column(
         children: [
           MyCardAndTransactionHistory(),
+          Gap(24),
+          Income(),
         ],
       ),
     );
