@@ -33,6 +33,7 @@ class _AllExpensesBodyState extends State<AllExpensesBody> {
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView.builder(
+        padding: EdgeInsets.zero,
         scrollDirection: Axis.horizontal,
         shrinkWrap: true,
         physics: const NeverScrollableScrollPhysics(),

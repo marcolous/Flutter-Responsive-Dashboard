@@ -10,7 +10,7 @@ class AllExpenses extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CustomContainer(
-      height: 320,
+      height: 300,
       child: Padding(
         padding: EdgeInsets.all(20),
         child: Column(

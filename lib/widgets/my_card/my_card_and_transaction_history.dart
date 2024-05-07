@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:responsive_dashboard/widgets/custom_container.dart';
+import 'package:responsive_dashboard/widgets/custom_divider.dart';
 import 'package:responsive_dashboard/widgets/my_card/dots_indicator.dart';
 import 'package:responsive_dashboard/widgets/my_card/my_card.dart';
+import 'package:responsive_dashboard/widgets/transactions/transactions.dart';
 
 class MyCardAndTransactionHistory extends StatefulWidget {
   const MyCardAndTransactionHistory({super.key});
@@ -20,7 +22,7 @@ class _MyCardAndTransactionHistoryState
     super.initState();
     pageController = PageController();
     pageController.addListener(() {
-      currentPageIndex = pageController.page!.toInt();
+      currentPageIndex = pageController.page!.round();
       setState(() {});
     });
   }
@@ -35,7 +37,9 @@ class _MyCardAndTransactionHistoryState
         children: [
           MyCard(pageController: pageController),
           const Gap(20),
-          DotsIndicator(currentPageIndex: currentPageIndex)
+          DotsIndicator(currentPageIndex: currentPageIndex),
+          const CustomDivider(),
+          const Transactions()
         ],
       ),
     );

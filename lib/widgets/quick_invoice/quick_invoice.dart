@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:responsive_dashboard/widgets/custom_container.dart';
+import 'package:responsive_dashboard/widgets/custom_divider.dart';
 import 'package:responsive_dashboard/widgets/quick_invoice/customer_name_email_row.dart';
 import 'package:responsive_dashboard/widgets/quick_invoice/item_name_amount_row.dart';
 import 'package:responsive_dashboard/widgets/quick_invoice/quick_invoice_buttons_row.dart';
@@ -22,10 +23,7 @@ class QuickInvoice extends StatelessWidget {
             QuickInvoiceHeader(),
             Gap(16),
             QuickInvoiceLatestTransaction(),
-            Divider(
-              height: 48,
-              color: Color(0xffF1F1F1),
-            ),
+            CustomDivider(),
             CustomerNameEmailRow(),
             Gap(24),
             ItemNameAmountRow(),
