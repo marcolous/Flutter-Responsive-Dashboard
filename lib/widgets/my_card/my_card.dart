@@ -15,7 +15,7 @@ class MyCard extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text('My card', style: AppStyles.styleSemiBold20(context)),
-        const Gap(20),
+        const Gap(15),
         ExpandablePageView(
           controller: pageController,
           scrollDirection: Axis.horizontal,
@@ -37,12 +37,12 @@ class MyCard extends StatelessWidget {
                   child: Column(
                     children: [
                       const MyCardListTile(),
-                      const Expanded(child: Gap(55)),
+                      const Expanded(child: Gap(1)),
                       CardDetails(
                         title: '0918 8124 0042 8129',
                         style: AppStyles.styleSemiBold24(context),
                       ),
-                      const Gap(12),
+                      const Gap(5),
                       CardDetails(
                         title: '12/20 - 124',
                         style: AppStyles.styleRegular16(context),

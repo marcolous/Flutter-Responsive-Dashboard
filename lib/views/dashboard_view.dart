@@ -22,7 +22,7 @@ class _DashBoardViewState extends State<DashBoardView> {
     return Scaffold(
       key: scaffoldKey,
       drawer: const CustomDrawer(),
-      appBar: MediaQuery.sizeOf(context).width < SizeConfig.tablet
+      appBar: MediaQuery.sizeOf(context).width < SizeConfig.desktop
           ? buildAppBar()
           : null,
       backgroundColor: const Color(0xffF7F9FA),

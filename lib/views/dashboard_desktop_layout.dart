@@ -12,7 +12,7 @@ class DashBoardDesktopLayout extends StatelessWidget {
     return const Row(
       children: [
         Expanded(flex: 1, child: CustomDrawer()),
-        Gap(32),
+        Gap(10),
         Expanded(
           flex: 5,
           child: CustomScrollView(
@@ -20,9 +20,10 @@ class DashBoardDesktopLayout extends StatelessWidget {
               SliverFillRemaining(
                 hasScrollBody: false,
                 child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Expanded(flex: 3, child: AllExpensesAndQuickInvoice()),
-                    Gap(32),
+                    Gap(10),
                     Expanded(flex: 2, child: MyCardAndIncome()),
                   ],
                 ),

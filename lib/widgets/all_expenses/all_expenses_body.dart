@@ -31,14 +31,29 @@ class _AllExpensesBodyState extends State<AllExpensesBody> {
   int isActive = 0;
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: expensesItems.asMap().entries.map(
-        (e) {
-          int index = e.key;
-          if (index == 1) {
-            return Expanded(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 12),
+    return SizedBox(
+      // height: 200,
+      child: Row(
+        children: expensesItems.asMap().entries.map(
+          (e) {
+            int index = e.key;
+            if (index == 1) {
+              return Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                  child: GestureDetector(
+                    onTap: () {
+                      updateIndex(index);
+                    },
+                    child: AllExpensesItem(
+                      isActive: isActive == index,
+                      allExpensesItemModel: expensesItems[index],
+                    ),
+                  ),
+                ),
+              );
+            } else {
+              return Expanded(
                 child: GestureDetector(
                   onTap: () {
                     updateIndex(index);
@@ -48,23 +63,11 @@ class _AllExpensesBodyState extends State<AllExpensesBody> {
                     allExpensesItemModel: expensesItems[index],
                   ),
                 ),
-              ),
-            );
-          } else {
-            return Expanded(
-              child: GestureDetector(
-                onTap: () {
-                  updateIndex(index);
-                },
-                child: AllExpensesItem(
-                  isActive: isActive == index,
-                  allExpensesItemModel: expensesItems[index],
-                ),
-              ),
-            );
-          }
-        },
-      ).toList(),
+              );
+            }
+          },
+        ).toList(),
+      ),
     );
     // return Expanded(
     //   child: ListView.builder(

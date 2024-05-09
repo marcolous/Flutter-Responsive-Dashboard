@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:responsive_dashboard/widgets/custom_widgets/custom_container.dart';
@@ -33,12 +32,11 @@ class _MyCardAndTransactionHistoryState
     //log(MediaQuery.sizeOf(context).width.toString());
     return CustomContainer(
       padding: const EdgeInsets.all(24),
-      height: 750,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           MyCard(pageController: pageController),
-          const Gap(20),
+          const Gap(15),
           DotsIndicator(currentPageIndex: currentPageIndex),
           const CustomDivider(),
           const Transactions(),

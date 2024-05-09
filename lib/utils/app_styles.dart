@@ -112,10 +112,10 @@ double getScaleFactor(context) {
   // double width = physicalWidth / devicePixelRatio;
 
   if (width < SizeConfig.tablet) {
-    return width / 550;
+    return width / 900;
   } else if (width < SizeConfig.desktop) {
-    return width / 1000;
+    return width / 1300;
   } else {
-    return width / 1920;
+    return width / 2000;
   }
 }

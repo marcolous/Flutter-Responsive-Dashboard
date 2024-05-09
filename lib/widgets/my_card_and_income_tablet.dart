@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:responsive_dashboard/widgets/income/income.dart';
+import 'package:responsive_dashboard/widgets/income/income_tablet_chart.dart';
 import 'package:responsive_dashboard/widgets/my_card/my_card_and_transaction_history.dart';
 
-class MyCardAndIncome extends StatelessWidget {
-  const MyCardAndIncome({super.key});
+class MyCardAndIncomeTablet extends StatelessWidget {
+  const MyCardAndIncomeTablet({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class MyCardAndIncome extends StatelessWidget {
         children: [
           MyCardAndTransactionHistory(),
           Gap(10),
-          Income(),
+          IncomeTabletChart(),
         ],
       ),
     );

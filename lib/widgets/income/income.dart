@@ -32,8 +32,8 @@ class Income extends StatelessWidget {
                 Expanded(
                   child: Row(
                     children: [
-                      Expanded(flex: 2, child: IncomeChart()),
-                      IncomeList()
+                      Expanded(flex: 1, child: IncomeChart()),
+                      Expanded(flex: 1, child: IncomeList())
                     ],
                   ),
                 )
