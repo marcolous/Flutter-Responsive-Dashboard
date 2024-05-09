@@ -65,23 +65,23 @@ class _AllExpensesItemState extends State<AllExpensesItem> {
             Text(
               widget.allExpensesItemModel.title,
               style: widget.isActive
-                  ? AppStyles.styleSemiBold16
+                  ? AppStyles.styleSemiBold16(context)
                       .copyWith(color: const Color(0xffFFFFFF))
-                  : AppStyles.styleSemiBold16,
+                  : AppStyles.styleSemiBold16(context),
             ),
             Text(
               widget.allExpensesItemModel.date,
               style: widget.isActive
-                  ? AppStyles.styleRegular14
+                  ? AppStyles.styleRegular14(context)
                       .copyWith(color: const Color(0xffFFFFFF))
-                  : AppStyles.styleRegular14,
+                  : AppStyles.styleRegular14(context),
             ),
             Text(
               widget.allExpensesItemModel.price,
               style: widget.isActive
-                  ? AppStyles.styleSemiBold24
+                  ? AppStyles.styleSemiBold24(context)
                       .copyWith(color: const Color(0xffFFFFFF))
-                  : AppStyles.styleSemiBold24,
+                  : AppStyles.styleSemiBold24(context),
             ),
           ],
         ),

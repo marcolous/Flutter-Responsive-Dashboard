@@ -29,7 +29,7 @@ class QuickInvoiceLatestTransaction extends StatelessWidget {
       children: [
          Text(
           'Latest Transaction',
-          style: AppStyles.styleMedium16,
+          style: AppStyles.styleMedium16(context),
         ),
         const Gap(12),
         //Solution 1 for horizontal listview (its height based on its child, lower performance, for few items)

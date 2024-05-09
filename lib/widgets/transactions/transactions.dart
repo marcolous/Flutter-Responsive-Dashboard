@@ -16,8 +16,8 @@ class Transactions extends StatelessWidget {
         const Gap(20),
         Text(
           '13 April 2022',
-          style:
-              AppStyles.styleMedium16.copyWith(color: const Color(0xffAAAAAA)),
+          style: AppStyles.styleMedium16(context)
+              .copyWith(color: const Color(0xffAAAAAA)),
         ),
         const Gap(4),
         const CustomTransactionContainer(isTrue: false),
@@ -27,6 +27,3 @@ class Transactions extends StatelessWidget {
     );
   }
 }
-
-
-

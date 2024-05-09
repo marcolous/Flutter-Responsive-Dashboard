@@ -19,19 +19,19 @@ class CustomTransactionContainer extends StatelessWidget {
         child: ListTile(
           title:  Text(
             'Cash Withdrawal',
-            style: AppStyles.styleSemiBold16,
+            style: AppStyles.styleSemiBold16(context),
           ),
           subtitle: Padding(
             padding: const EdgeInsets.only(top: 3),
             child: Text(
               '13 Apr, 2022 at 3:30 PM',
-              style: AppStyles.styleRegular16
+              style: AppStyles.styleRegular16(context)
                   .copyWith(color: const Color(0xffAAAAAA)),
             ),
           ),
           trailing: Text(
             r'$20,129',
-            style: AppStyles.styleSemiBold20.copyWith(
+            style: AppStyles.styleSemiBold20(context).copyWith(
               color: isTrue ? const Color(0xff7DD97B) : const Color(0xffF3735E),
             ),
           ),

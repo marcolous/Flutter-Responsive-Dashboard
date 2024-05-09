@@ -28,7 +28,7 @@ class CustomElevatedButton extends StatelessWidget {
           ),
           child: Text(
             text,
-            style: AppStyles.styleSemiBold18.copyWith(color: Color(textColor)),
+            style: AppStyles.styleSemiBold18(context).copyWith(color: Color(textColor)),
           ),
         ),
       ),

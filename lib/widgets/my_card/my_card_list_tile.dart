@@ -11,14 +11,14 @@ class MyCardListTile extends StatelessWidget {
     return ListTile(
       title: Text(
         'Card Owner',
-        style: AppStyles.styleRegular16
+        style: AppStyles.styleRegular16(context)
             .copyWith(color: Colors.white),
       ),
       subtitle:  Padding(
         padding: const EdgeInsets.only(bottom: 8),
         child: Text(
           'Syah Bandi',
-          style: AppStyles.styleMedium20,
+          style: AppStyles.styleMedium20(context),
         ),
       ),
       trailing: const Icon(Icons.credit_card_rounded),

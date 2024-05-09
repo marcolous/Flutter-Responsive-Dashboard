@@ -19,11 +19,11 @@ class CustomIncomeListTile extends StatelessWidget {
       ),
       title: Text(
         text,
-        style: AppStyles.styleRegular16,
+        style: AppStyles.styleRegular16(context),
       ),
       trailing: Text(
         percent,
-        style: AppStyles.styleMedium16,
+        style: AppStyles.styleMedium16(context),
       ),
     );
   }

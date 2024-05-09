@@ -20,7 +20,7 @@ class CustomUserInfoTextField extends StatelessWidget {
         children: [
           Text(
             title,
-            style: AppStyles.styleMedium16,
+            style: AppStyles.styleMedium16(context),
           ),
           const Gap(12),
           SizedBox(
@@ -32,7 +32,7 @@ class CustomUserInfoTextField extends StatelessWidget {
                   filled: true,
                   fillColor: const Color(0xffFAFAFA),
                   hintText: hintText,
-                  hintStyle: AppStyles.styleRegular16
+                  hintStyle: AppStyles.styleRegular16(context)
                       .copyWith(color: const Color(0xffAAAAAA)),
                   enabledBorder: textFieldOutlineInputBorder(),
                   focusedBorder: textFieldOutlineInputBorder(),
