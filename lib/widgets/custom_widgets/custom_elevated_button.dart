@@ -12,23 +12,24 @@ class CustomElevatedButton extends StatelessWidget {
   final String text;
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: 270,
-      height: 60,
-      child: ElevatedButton(
-        onPressed: () {},
-        style: ElevatedButton.styleFrom(
-          backgroundColor: Color(bgColor),
-          foregroundColor: Color(bgColor),
-          surfaceTintColor: Color(bgColor),
-          elevation: 0,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+    return Expanded(
+      child: SizedBox(
+        height: 60,
+        child: ElevatedButton(
+          onPressed: () {},
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Color(bgColor),
+            foregroundColor: Color(bgColor),
+            surfaceTintColor: Color(bgColor),
+            elevation: 0,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
           ),
-        ),
-        child: Text(
-          text,
-          style: AppStyles.styleSemiBold18.copyWith(color: Color(textColor)),
+          child: Text(
+            text,
+            style: AppStyles.styleSemiBold18.copyWith(color: Color(textColor)),
+          ),
         ),
       ),
     );
