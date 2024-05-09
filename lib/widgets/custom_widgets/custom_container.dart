@@ -4,12 +4,12 @@ class CustomContainer extends StatelessWidget {
   const CustomContainer({
     super.key,
     required this.child,
-    required this.height,
+     this.height,
     this.margin,
     this.padding,
   });
   final Widget child;
-  final double height;
+  final double? height;
   final EdgeInsetsGeometry? padding;
   final EdgeInsetsGeometry? margin;
 
