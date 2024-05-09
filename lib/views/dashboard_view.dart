@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/views/dashboard_phone_layout.dart';
 import 'package:responsive_dashboard/views/dashboard_tablet_layout.dart';
 import 'package:responsive_dashboard/widgets/adaptive_layout_widget.dart';
 import 'package:responsive_dashboard/views/dashboard_desktop_layout.dart';
@@ -22,7 +23,7 @@ class _DashBoardViewState extends State<DashBoardView> {
       appBar: MediaQuery.sizeOf(context).width < 1200 ? buildAppBar() : null,
       backgroundColor: const Color(0xffF7F9FA),
       body: AdaptiveLayout(
-          mobileLayout: (context) => const SizedBox(),
+          mobileLayout: (context) => const DashBoardPhoneLayout(),
           tabletLayout: (context) => const DashBoardTabletLayout(),
           desktopLayout: (context) => const DashBoardDesktopLayout()),
     );
