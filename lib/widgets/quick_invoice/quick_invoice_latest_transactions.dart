@@ -27,7 +27,7 @@ class QuickInvoiceLatestTransaction extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text(
+         Text(
           'Latest Transaction',
           style: AppStyles.styleMedium16,
         ),

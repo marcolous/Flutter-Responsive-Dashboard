@@ -10,7 +10,7 @@ class IncomeHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        const Text(
+         Text(
           'Income',
           style: AppStyles.styleSemiBold20,
         ),
@@ -23,14 +23,14 @@ class IncomeHeader extends StatelessWidget {
               borderRadius: BorderRadius.circular(12),
             ),
           ),
-          child: const Row(
+          child:  Row(
             children: [
               Text(
                 'Monthly',
                 style: AppStyles.styleMedium16,
               ),
-              Gap(18),
-              CustomArrowDownIcon(),
+              const Gap(18),
+              const CustomArrowDownIcon(),
             ],
           ),
         ),

@@ -14,7 +14,7 @@ class MyCard extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text('My card', style: AppStyles.styleSemiBold20),
+        Text('My card', style: AppStyles.styleSemiBold20),
         const Gap(20),
         ExpandablePageView(
           controller: pageController,
@@ -31,17 +31,18 @@ class MyCard extends StatelessWidget {
                   color: const Color(0xFF4EB7F2),
                   borderRadius: BorderRadius.circular(12.0),
                 ),
-                child: const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 14, vertical: 20),
+                child: Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 14, vertical: 20),
                   child: Column(
                     children: [
-                      MyCardListTile(),
-                      Expanded(child: Gap(55)),
+                      const MyCardListTile(),
+                      const Expanded(child: Gap(55)),
                       CardDetails(
                         title: '0918 8124 0042 8129',
                         style: AppStyles.styleSemiBold24,
                       ),
-                      Gap(12),
+                      const Gap(12),
                       CardDetails(
                         title: '12/20 - 124',
                         style: AppStyles.styleRegular16,

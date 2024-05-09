@@ -17,7 +17,7 @@ class CustomTransactionContainer extends StatelessWidget {
           color: const Color(0xffFAFAFA),
         ),
         child: ListTile(
-          title: const Text(
+          title:  Text(
             'Cash Withdrawal',
             style: AppStyles.styleSemiBold16,
           ),

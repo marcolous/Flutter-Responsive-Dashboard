@@ -14,8 +14,8 @@ class MyCardListTile extends StatelessWidget {
         style: AppStyles.styleRegular16
             .copyWith(color: Colors.white),
       ),
-      subtitle: const Padding(
-        padding: EdgeInsets.only(bottom: 8),
+      subtitle:  Padding(
+        padding: const EdgeInsets.only(bottom: 8),
         child: Text(
           'Syah Bandi',
           style: AppStyles.styleMedium20,
