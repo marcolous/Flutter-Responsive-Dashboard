@@ -1,4 +1,3 @@
-
 # Responsive Dashboard
 
 [![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)](https://flutter.dev/)
@@ -14,25 +13,13 @@ Responsive Dashboard is a Flutter project demonstrating how to create a responsi
 
 ## Packages Used
 
-- [cupertino_icons: ^1.0.2](https://pub.dev/packages/cupertino_icons)
-- [device_preview: ^1.1.0](https://pub.dev/packages/device_preview)
-- [expandable_page_view: ^1.0.17](https://pub.dev/packages/expandable_page_view)
-- [fl_chart: ^0.67.0](https://pub.dev/packages/fl_chart)
-- [flutter: sdk: flutter](https://flutter.dev/)
-- [flutter_svg: ^2.0.10+1](https://pub.dev/packages/flutter_svg)
-- [font_awesome_flutter: ^10.7.0](https://pub.dev/packages/font_awesome_flutter)
-- [gap: ^3.0.1](https://pub.dev/packages/gap)
-
-## Screenshots
-
-### Desktop View
-![Desktop View](screenshots/desktop_view.png)
-
-### Tablet View
-![Tablet View](screenshots/tablet_view.png)
-
-### Phone View
-![Phone View](screenshots/phone_view.png)
+- `cupertino_icons`: ^1.0.2
+- `device_preview`: ^1.1.0
+- `expandable_page_view`: ^1.0.17
+- `fl_chart`: ^0.67.0
+- `flutter_svg`: ^2.0.10+1
+- `font_awesome_flutter`: ^10.7.0
+- `gap`: ^3.0.1
 
 ## Getting Started
 
@@ -46,7 +33,7 @@ Follow these instructions to get a copy of the project running on your local mac
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/marcolous/Flutter-Responsive-Dashboard
+   git clone https://github.com/marcolous/Flutter-Responsive-Dashboard.git
    ```
 2. Navigate to the project directory:
    ```bash
